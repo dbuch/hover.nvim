@@ -136,7 +136,6 @@ end
 
 ---@async
 local function run_provider(provider)
-  vim.notify('Hover: Running provider: '..provider.name, vim.log.levels.INFO)
   local config = get_config()
   local opts = vim.deepcopy(config.preview_opts)
   opts.focus_id = 'hover'
