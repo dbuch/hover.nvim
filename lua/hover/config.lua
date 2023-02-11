@@ -9,8 +9,6 @@ local default_config = {
   title = true
 }
 
-vim.api.nvim_create_user_command('Hover', require'hover'.hover, {});
-
 ---@type HoverConfig
 local config
 

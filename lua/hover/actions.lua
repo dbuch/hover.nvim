@@ -162,6 +162,9 @@ local function init()
   end
   initialised = true
 
+  vim.api.nvim_create_user_command("Hover", M.hover, {})
+  vim.api.nvim_create_user_command("HoverSelect", M.hover_select, {})
+
   local config = get_config()
   if config and type(config.init) == 'function' then
     config.init()
